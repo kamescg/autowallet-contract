@@ -1,0 +1,36 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/test/BeanCounter.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.6;\n\ncontract BeanCounter {\n  uint256 public counter;\n  constructor() {\n    counter = 1;\n  }\n\n  function nextCounter() external view returns (uint256) {\n    return counter + 1;\n  }\n\n  function setCounter(uint256 _counter) external {\n    counter = _counter;\n  }\n}"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 2000
+    },
+    "evmVersion": "berlin",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
