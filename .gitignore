@@ -21,3 +21,6 @@ coverage
 coverage.json
 
 .DS_STORE
+
+deployments/localhost
+deployments/hardhat
